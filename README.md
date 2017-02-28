@@ -1,5 +1,7 @@
 # minjpa
-repository that contains minimum jpa project based on Hibernate with two classes example 
+repository that contains minimum jpa project based on Hibernate with two classes example.  
+This version uses container defined data source in context.xml and persistence.xml prepared for tomcat,
+which transaction type RESOURCE-LOCAL, and non-jta-data-source.
 
 It uses mysql db with development setup:
 username: minjpa

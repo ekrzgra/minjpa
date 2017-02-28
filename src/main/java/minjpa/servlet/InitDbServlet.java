@@ -21,6 +21,5 @@ public class InitDbServlet extends HttpServlet {
 		PrintWriter printWriter = response.getWriter();
 		printWriter.println("<h1>Init DB!</h1>");
 		Persistence.createEntityManagerFactory("minjpaPU");
-		// Persistence.createEntityManagerFactory("minjpaPU");
 	}
 }
