@@ -7,13 +7,10 @@
  
     <persistence-unit name="minjpaPU">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <non-jta-data-source>java:comp/env/jdbc/minjpa</non-jta-data-source>
         <class>minjpa.entities.DailyStatistics</class>
         <class>minjpa.entities.Video</class>
-        <properties>            
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://192.168.99.100:3306/minjpa" />
-            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-            <property name="javax.persistence.jdbc.user" value="minjpa" />
-            <property name="javax.persistence.jdbc.password" value="minjpa" />
+        <properties>           
             <property name="hibernate.show_sql" value="true" />
             <property name="hibernate.format_sql" value="true" />
             <property name="hibernate.hbm2ddl.auto" value="update" />
